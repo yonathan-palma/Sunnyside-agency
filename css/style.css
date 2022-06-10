@@ -1,0 +1,56 @@
+:root{
+    --Softred: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --DarkDesaturatedCyan: hsl(167, 40%, 24%);
+    --DarkBlue: hsl(198, 62%, 26%);
+    --DarkModerateCyan: hsl(168, 34%, 41%);
+    --VeryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+    --VeryDarkGrayishBlue: hsl(213, 9%, 39%);
+    --DarkGrayishBlue: hsl(232, 10%, 55%);
+    --GrayishBlue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: #3ebfff;
+    background-image: url(../images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+}
+.navbar-nav .nav-item{
+    margin: 0 12px;
+}
+.nav-item .nav-link{
+    font-family: 'Barlow', sans-serif;
+    color: var(--White);
+}
+.nav-link.link-active{
+    color: var(--VeryDarkDesaturatedBlue);
+    background-color: var(--White);
+    border-radius: 22px;
+    padding: 0.6rem 1.2rem !important;
+}
+.nav-link.link-active:hover{
+    color: var(--White);
+    background-color: var(--DarkGrayishBlue);
+
+}
+.title_header{
+    font-family: 'Fraunces', serif;
+    color: var(--White);
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 6px;
+    margin-top: 5rem;
+
+}
+
+@media  (max-width:425px) {
+    .header{
+        background-image: url(../images/mobile/image-header.jpg);
+    }
+}
