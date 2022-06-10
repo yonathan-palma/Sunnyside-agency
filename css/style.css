@@ -46,11 +46,112 @@
     text-align: center;
     letter-spacing: 6px;
     margin-top: 5rem;
-
 }
+.item_info{
+    grid-template-columns: 1fr 1fr;
+}
+.grid-item{
+    /* height: 450px; */
+    padding: 7rem 6rem 6rem 7rem;
+}
+.background_image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.yellow{
+    /* background-color: var(--Yellow); */
+    background-image: url(../images/desktop/image-transform.jpg);
+}
+.softred{
+    /* background-color: var(--Softred); */
+    background-image: url(../images/desktop/image-stand-out.jpg);
+}
+.cyan{
+    /* background-color: var(--DarkDesaturatedCyan); */
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+}
+.blue{
+    /* background-color: var(--DarkBlue); */
+    background-image: url(../images/desktop/image-photography.jpg);
+}
+.h2-title{
+    font-family: 'Fraunces', serif;
+    color: var(--VeryDarkDesaturatedBlue);
+}
+.grid-item p{
+    line-height: 2;
+    color: var(--DarkGrayishBlue);
+    font-family: 'Barlow', sans-serif;
+    margin: 3rem 0;
+}
+.grid-item .link_item{
+    font-family: 'Fraunces', serif;
+    color: var(--VeryDarkDesaturatedBlue);
+    text-decoration: none;
+    padding: 0 8px;
+}
+.grid-item .link_item::before{
+    content: "";
+    position: absolute;
+    bottom: -0-5rem;
+    bottom: -0.1rem;
+    left: 0;
+    height: 8px;
+    border-radius: 5px;
+    width: 100%;
+    z-index: -10;
+    
+}
+.grid-item .link_yellow::before{
+    background-color: #fad40070;
+}
+.grid-item .link_softred::before{
+    background-color: #fe726385
+}
+.grid-item .link_yellow:hover::before{
+    background-color: var(--Yellow);
+}
+.grid-item .link_softred:hover::before{
+    background-color: var(--Softred);
+}
+
+
 
 @media  (max-width:425px) {
     .header{
         background-image: url(../images/mobile/image-header.jpg);
+    }
+    ul.navbar-nav{
+        position: absolute;
+        background-color: var(--White);
+        width: 100%;
+        padding: 2rem;
+        margin-top: 36px;
+    }
+    .nav-item .nav-link{
+        text-align: center;
+        color: var(--DarkGrayishBlue);
+    }
+    .nav-link.link-active{
+        color: var(--VeryDarkDesaturatedBlue);
+        background-color: var(--Yellow);
+        width: fit-content;
+    }
+    .navbar-nav .nav-item{
+        margin: auto;
+    }
+    .triangule{
+        /* background-color: var(--White); */
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        right: 0;
+        margin-top: 16px;
+        border-right: solid var(--White) 10px;
+        border-bottom: solid var(--White) 10px;
+        border-top: solid #3ebfff 10px;
+        border-left: solid #3ebfff 10px;
+
     }
 }
