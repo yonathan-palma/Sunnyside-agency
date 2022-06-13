@@ -51,8 +51,9 @@
     grid-template-columns: 1fr 1fr;
 }
 .grid-item{
-    /* height: 450px; */
+    height: 540px;
     padding: 7rem 6rem 6rem 7rem;
+    font-family: 'Fraunces', serif;
 }
 .background_image{
     background-size: cover;
@@ -70,13 +71,25 @@
 .cyan{
     /* background-color: var(--DarkDesaturatedCyan); */
     background-image: url(../images/desktop/image-graphic-design.jpg);
+    background-position: top;
+    padding: 50% 25% 20px 25%;
+    text-align: center;
+
 }
 .blue{
     /* background-color: var(--DarkBlue); */
     background-image: url(../images/desktop/image-photography.jpg);
+    background-position: top;
+    padding: 50% 25% 20px 25%;
+    text-align: center;
+}
+.blue{
+    color: var(--DarkBlue);
+}
+.cyan{
+    color: var(--DarkDesaturatedCyan);
 }
 .h2-title{
-    font-family: 'Fraunces', serif;
     color: var(--VeryDarkDesaturatedBlue);
 }
 .grid-item p{
@@ -85,8 +98,13 @@
     font-family: 'Barlow', sans-serif;
     margin: 3rem 0;
 }
+.blue p{
+    color: var(--DarkBlue);
+}
+.cyan p{
+    color: var(--DarkModerateCyan);
+}
 .grid-item .link_item{
-    font-family: 'Fraunces', serif;
     color: var(--VeryDarkDesaturatedBlue);
     text-decoration: none;
     padding: 0 8px;
@@ -116,6 +134,58 @@
     background-color: var(--Softred);
 }
 
+.user_padding{
+    padding: 6rem 0;
+}
+.user_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.user_title{
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    color: var(--GrayishBlue);
+    letter-spacing: 4px;
+    font-size: 18px;
+    padding-bottom: 3rem;
+}
+.user_avatar img{
+    width: 80px;
+}
+.user_info .user_testi{
+    color: var(--GrayishBlue);
+    text-align: center;
+}
+
+.user_name h4{
+    font-family: 'Fraunces', sans-serif;
+    font-size: 18px;
+}
+.user_name span{
+    color: var(--GrayishBlue);
+    font-size: 14px;
+}
+
+
+.flex_img div{
+    height: 350px;
+    width: 25%;
+
+}
+.flex_img_milk{
+    background-image: url(../images/desktop/image-gallery-milkbottles.jpg)
+}
+.flex_img_orange{
+    background-image: url(../images/desktop/image-gallery-orange.jpg);
+}
+.flex_img_cone{
+    background-image: url(../images/desktop/image-gallery-cone.jpg);
+}
+.flex_img_marsh{
+    background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+}
 
 
 @media  (max-width:425px) {
@@ -153,5 +223,48 @@
         border-top: solid #3ebfff 10px;
         border-left: solid #3ebfff 10px;
 
+    }
+    .item_info{
+        grid-template-columns: 1fr;
+    }
+    .grid-item{
+        padding: 3rem 1rem;
+        text-align: center;
+        height: auto;
+    }
+    .yellow{
+        background-image: url(../images/mobile/image-transform.jpg);
+        height: 360px;
+    }
+    .softred{
+        background-image: url(../images/mobile/image-stand-out.jpg);
+        height: 360px;
+    }
+    .cyan{
+        background-image: url(../images/mobile/image-graphic-design.jpg);
+        height: 600px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 1rem;
+    }
+    .blue{
+        background-image: url(../images/mobile/image-photography.jpg);
+        height: 600px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 1rem;
+    }
+    .cyan p, .blue p{
+        margin-top: 1rem;
+    }
+
+    .user_card {
+        flex-wrap: wrap; 
+    }
+    .user_info{
+        gap: 1rem;
+       margin-top: 2rem;
     }
 }
