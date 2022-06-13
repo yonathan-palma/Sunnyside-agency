@@ -19,25 +19,27 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <img src="images/logo.svg" class="navbar-brand" alt="Logo">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <img src="images/icon-hamburger.svg" alt="menu hamburger">
-                        <!-- <span class="navbar-toggler-icon"></span> -->
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse  " id="navbarSupportedContent">
-                    <div class="triangule"></div>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a href="" class="nav-link">About</a> </li>
-                        <li class="nav-item"><a href="" class="nav-link">Services</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Projects</a></li>
-                        <li class="nav-item"><a href="" class="nav-link link-active">CONTACT</a></li>
-                    </ul>
-                </div>
-                
-            </nav>
+            <menu>  
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <img src="images/logo.svg" class="navbar-brand" alt="Logo">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <img src="images/icon-hamburger.svg" alt="menu hamburger">
+                            <!-- <span class="navbar-toggler-icon"></span> -->
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="triangule"></div>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item mx-3"><a href="#" class="nav-link">About</a> </li>
+                            <li class="nav-item mx-3"><a href="#" class="nav-link">Services</a></li>
+                            <li class="nav-item mx-3"><a href="#" class="nav-link">Projects</a></li>
+                            <li class="nav-item mx-3"><a href="#" class="nav-link link-active">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    
+                </nav>
+            </menu> 
             <h1 class="title_header">WE ARE CREATIVES</h1>
             <div class="arrow_header d-flex mt-5 justify-content-center">
                 <img src="images/icon-arrow-down.svg" alt="Flecha">
@@ -49,7 +51,7 @@
             <div class="item_info d-grid">
                 <div class="grid-item">
                     <h2 class="h2-title">Transform your brand</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum architecto eius optio dolor aut! Corporis, similique magni? Suscipit iure odio molestiae velit, asperiores officia quasi eveniet commodi odit. Nobis, perferendis!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum architecto eius optio dolor aut! Corporis, similique magni? Suscipit iure odio molestiae velit.</p>
                     <a href="#" class="link_item link_yellow" style="position:relative;">LEARN MORE</a>
                 </div>
                 <div class="grid-item background_image yellow">
@@ -58,7 +60,7 @@
                 <div class="grid-item background_image softred"></div>
                 <div class="grid-item">
                     <h2 class="h2-title">stand out to the right audience</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum architecto eius optio dolor aut! Corporis, similique magni? Suscipit iure odio molestiae velit, asperiores officia quasi eveniet commodi odit. Nobis, perferendis!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum architecto eius optio dolor aut! Corporis, similique magni? Suscipit iure odio molestiae velit.</p>
                     <a href="#" class="link_item link_softred" style="position:relative;">LEARN MORE</a>
                 </div>
                 <div class="grid-item background_image cyan">
@@ -122,7 +124,7 @@
             </div>
         </section>
         <section>
-            <div class="flex_img d-flex">
+            <div class="flex_img d-grid">
                 <div class="flex_img_milk background_image"></div>
                 <div class="flex_img_orange background_image"></div>
                 <div class="flex_img_cone background_image"></div>
@@ -130,8 +132,24 @@
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="container py-5 d-flex flex-column align-items-center">
+            <h2 class="footer_title">Sunnyside</h2>
+            <nav class="navbar navbar-expand-lg">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3"><a href="#" class="nav-link">About</a> </li>
+                    <li class="nav-item mx-3"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item mx-3"><a href="#" class="nav-link">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="social_link d-flex gap-3 mt-5">
+                <div class="facebook"><a href="#" class="nav-link"><i class="bi bi-facebook"></i></a></div>
+                <div class="instagram"><a href="#" class="nav-link"><i class="bi bi-instagram"></i></a></div>
+                <div class="twitter"><a href="#" class="nav-link"><i class="bi bi-twitter"></i></a></div>
+                <div class="pinterest"><a href="#" class="nav-link"><i class="bi bi-pinterest"></i></a></div>
+                
+            </div>
+        </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

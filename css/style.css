@@ -9,11 +9,18 @@
     --DarkGrayishBlue: hsl(232, 10%, 55%);
     --GrayishBlue: hsl(210, 4%, 67%);
     --White: hsl(0, 0%, 100%);
+    --FontFamilyFraunces: 'Fraunces', serif;
+    --FontFamilyBarlow: 'Barlow', serif;
 }
 *{
     margin: 0;
     padding: 0;
 }
+
+/*  */
+/* header */
+/*  */
+
 .header{
     background-color: #3ebfff;
     background-image: url(../images/desktop/image-header.jpg);
@@ -21,39 +28,39 @@
     background-position: bottom;
     height: 100vh;
 }
-.navbar-nav .nav-item{
-    margin: 0 12px;
-}
 .nav-item .nav-link{
-    font-family: 'Barlow', sans-serif;
+    font-family: var(--FontFamilyBarlow);
     color: var(--White);
 }
 .nav-link.link-active{
     color: var(--VeryDarkDesaturatedBlue);
+    font-family: var(--FontFamilyFraunces);
     background-color: var(--White);
     border-radius: 22px;
     padding: 0.6rem 1.2rem !important;
 }
 .nav-link.link-active:hover{
     color: var(--White);
-    background-color: var(--DarkGrayishBlue);
-
+    background-color: var(--DarkBlue);
 }
 .title_header{
-    font-family: 'Fraunces', serif;
+    font-family: var(--FontFamilyFraunces);
     color: var(--White);
     font-weight: 900;
     text-align: center;
-    letter-spacing: 6px;
+    letter-spacing: 8px;
     margin-top: 5rem;
 }
+
+/* item_info */
+
 .item_info{
     grid-template-columns: 1fr 1fr;
 }
 .grid-item{
     height: 540px;
     padding: 7rem 6rem 6rem 7rem;
-    font-family: 'Fraunces', serif;
+    font-family: var(--FontFamilyFraunces);
 }
 .background_image{
     background-size: cover;
@@ -61,33 +68,24 @@
     background-position: center;
 }
 .yellow{
-    /* background-color: var(--Yellow); */
     background-image: url(../images/desktop/image-transform.jpg);
 }
 .softred{
-    /* background-color: var(--Softred); */
     background-image: url(../images/desktop/image-stand-out.jpg);
 }
 .cyan{
-    /* background-color: var(--DarkDesaturatedCyan); */
     background-image: url(../images/desktop/image-graphic-design.jpg);
     background-position: top;
-    padding: 50% 25% 20px 25%;
+    padding: 45% 25% 0 25%;
     text-align: center;
-
+    color: var(--DarkDesaturatedCyan);
 }
 .blue{
-    /* background-color: var(--DarkBlue); */
     background-image: url(../images/desktop/image-photography.jpg);
     background-position: top;
-    padding: 50% 25% 20px 25%;
+    padding: 45% 25% 0 25%;
     text-align: center;
-}
-.blue{
     color: var(--DarkBlue);
-}
-.cyan{
-    color: var(--DarkDesaturatedCyan);
 }
 .h2-title{
     color: var(--VeryDarkDesaturatedBlue);
@@ -95,8 +93,8 @@
 .grid-item p{
     line-height: 2;
     color: var(--DarkGrayishBlue);
-    font-family: 'Barlow', sans-serif;
-    margin: 3rem 0;
+    font-family: var(--FontFamilyBarlow);
+    margin: 2rem 0;
 }
 .blue p{
     color: var(--DarkBlue);
@@ -118,8 +116,7 @@
     height: 8px;
     border-radius: 5px;
     width: 100%;
-    z-index: -10;
-    
+    z-index: -10;  
 }
 .grid-item .link_yellow::before{
     background-color: #fad40070;
@@ -145,7 +142,7 @@
 }
 .user_title{
     text-align: center;
-    font-family: 'Fraunces', serif;
+    font-family: var(--FontFamilyFraunces);
     color: var(--GrayishBlue);
     letter-spacing: 4px;
     font-size: 18px;
@@ -160,7 +157,7 @@
 }
 
 .user_name h4{
-    font-family: 'Fraunces', sans-serif;
+    font-family: var(--FontFamilyFraunces);
     font-size: 18px;
 }
 .user_name span{
@@ -168,11 +165,9 @@
     font-size: 14px;
 }
 
-
-.flex_img div{
-    height: 350px;
-    width: 25%;
-
+.flex_img{
+    grid-auto-flow: column;
+    grid-template-rows: 450px;
 }
 .flex_img_milk{
     background-image: url(../images/desktop/image-gallery-milkbottles.jpg)
@@ -188,31 +183,42 @@
 }
 
 
-@media  (max-width:425px) {
-    .header{
-        background-image: url(../images/mobile/image-header.jpg);
-    }
-    ul.navbar-nav{
+.footer{
+    background-color: var(--DarkModerateCyan);
+    color: var(--DarkDesaturatedCyan);
+}
+
+.footer .footer_title{
+    color: var(--DarkDesaturatedCyan);
+    font-weight: 800;
+}
+.footer .nav-link{
+    color: var(--DarkDesaturatedCyan);
+}
+.footer .nav-link:hover{
+    color: var(--White);
+}
+@media (max-width:768px){
+    .header ul.navbar-nav{
         position: absolute;
         background-color: var(--White);
         width: 100%;
         padding: 2rem;
         margin-top: 36px;
     }
-    .nav-item .nav-link{
+    .header .nav-item .nav-link{
         text-align: center;
         color: var(--DarkGrayishBlue);
     }
-    .nav-link.link-active{
+    .header .nav-link.link-active{
         color: var(--VeryDarkDesaturatedBlue);
         background-color: var(--Yellow);
         width: fit-content;
     }
-    .navbar-nav .nav-item{
+    .header .navbar-nav .nav-item{
         margin: auto;
     }
     .triangule{
-        /* background-color: var(--White); */
         height: 20px;
         width: 20px;
         position: absolute;
@@ -223,6 +229,18 @@
         border-top: solid #3ebfff 10px;
         border-left: solid #3ebfff 10px;
 
+    }
+    .grid-item{
+        height: auto;
+    }
+    .footer .navbar-nav{
+        display: flex !important;
+        flex-direction: row;
+    }
+}
+@media  (max-width:425px) {
+    .header{
+        background-image: url(../images/mobile/image-header.jpg);
     }
     .item_info{
         grid-template-columns: 1fr;
@@ -235,6 +253,7 @@
     .yellow{
         background-image: url(../images/mobile/image-transform.jpg);
         height: 360px;
+        order: -1;
     }
     .softred{
         background-image: url(../images/mobile/image-stand-out.jpg);
@@ -266,5 +285,22 @@
     .user_info{
         gap: 1rem;
        margin-top: 2rem;
+    }
+    .flex_img{
+        grid-auto-flow: row;
+        grid-template-rows: 250px 250px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .flex_img_milk{
+        background-image: url(../images/mobile/image-gallery-milkbottles.jpg)
+    }
+    .flex_img_orange{
+        background-image: url(../images/mobile/image-gallery-orange.jpg);
+    }
+    .flex_img_cone{
+        background-image: url(../images/mobile/image-gallery-cone.jpg);
+    }
+    .flex_img_marsh{
+        background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
     }
 }
