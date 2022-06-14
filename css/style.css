@@ -76,15 +76,13 @@
 .cyan{
     background-image: url(../images/desktop/image-graphic-design.jpg);
     background-position: top;
-    padding: 45% 25% 0 25%;
-    text-align: center;
+    padding: 2rem 25%;
     color: var(--DarkDesaturatedCyan);
 }
 .blue{
     background-image: url(../images/desktop/image-photography.jpg);
     background-position: top;
-    padding: 45% 25% 0 25%;
-    text-align: center;
+    padding: 2rem 25%;
     color: var(--DarkBlue);
 }
 .h2-title{
@@ -228,7 +226,6 @@
         border-bottom: solid var(--White) 10px;
         border-top: solid #3ebfff 10px;
         border-left: solid #3ebfff 10px;
-
     }
     .grid-item{
         height: auto;
@@ -278,7 +275,6 @@
     .cyan p, .blue p{
         margin-top: 1rem;
     }
-
     .user_card {
         flex-wrap: wrap; 
     }
