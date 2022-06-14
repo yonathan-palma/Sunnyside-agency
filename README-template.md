@@ -42,5 +42,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Yonathan Palma](https://github.com/yonathan-palma)
 - Frontend Mentor - [@yonathan-palma](https://www.frontendmentor.io/profile/yonathan-palma)
